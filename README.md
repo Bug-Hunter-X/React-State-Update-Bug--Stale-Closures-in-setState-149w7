@@ -1,0 +1,2 @@
+# React State Update Bug: Stale Closures in setState
+This example demonstrates a common error in React state updates involving stale closures. When updating state based on previous state, directly accessing `this.state` within `setState` can lead to incorrect values being used due to asynchronous nature of `setState`.  The solution uses functional updates for correct state management.
